@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Intelligence - Club</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+.header-right {
+    display: flex;
+    gap: 25px;   /* increase gap */
+    align-items: center;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Left College Logo (JBREC) */
+/* Left College Logo (JBREC) */
+.college-logo {
+    height: 220px;   /* 110px × 2 */
+    width: auto;
+}
+
+/* Right Accreditation Logos */
+.header-right img {
+    height: 100px;   /* 50px × 2 */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+/* Right Accreditation Logos */
+
+
+/* Center Content */
+.header-center {
+    text-align: center;
+}
+
+.header-center h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.header-center p {
+    margin: 2px 0;
+}
+
+.accreditation-text {
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+}
+
+/* Right Logos */
+.header-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Right Top Accreditation Logos */
+.header-right img {
+    height: 100px;   /* 2× increased */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.header-right img:hover {
+    transform: scale(1.1);
+}
+
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.header-right img:hover {
+    transform: scale(1.1);
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+   
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.club-logo{
+    width:80px;   /* decrease this value */
+    height:auto;
+    margin-bottom:20px;
+}
+/* ===== ROYAL VISION & MISSION SECTION ===== */
+.vision-mission .activity-content{
+color:rgba(255,255,255,0.92);
+}
+.vision-mission{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:#fff;
+position:relative;
+overflow:hidden;
+}
+.social-links {
+    margin-top: 12px;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.mail {
+    background: #f1f1f1;
+    color: #d93025;
+}
+
+.mail:hover {
+    background: #d93025;
+    color: white;
+}
+
+.linkedin {
+    background: #f1f1f1;
+    color: #0077b5;
+}
+
+.linkedin:hover {
+    background: #0077b5;
+    color: white;
+}
+.vision-mission h2{
+color:#fff;
+}
+
+.vision-mission .activity{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(212,175,55,0.4);
+box-shadow:0 20px 40px rgba(0,0,0,0.3);
+transition:all 0.4s ease;
+}
+
+.vision-mission .activity:hover{
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 25px 60px rgba(0,0,0,0.4);
+}
+
+.vision-mission h4{
+color:#d4af37;
+}
+.vision-mission .activity-content{
+color:white;
+}
+/* ===== LIGHT BEAMS EFFECT ===== */
+.vision-mission::before{
+content:"";
+position:absolute;
+top:-50%;
+left:-50%;
+width:200%;
+height:200%;
+background:radial-gradient(circle at 30% 30%, rgba(212,175,55,0.08), transparent 40%),
+            radial-gradient(circle at 70% 70%, rgba(255,255,255,0.05), transparent 40%);
+animation:beamMove 12s linear infinite;
+z-index:0;
+}
+
+@keyframes beamMove{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+/* Ensure content stays above beams */
+.vision-mission *{
+position:relative;
+z-index:2;
+}
+/* ===== ANIMATED GOLD DIVIDER ===== */
+.vision-mission h2::after{
+content:"";
+position:absolute;
+left:50%;
+bottom:-15px;
+transform:translateX(-50%);
+width:120px;
+height:4px;
+background:linear-gradient(90deg,transparent,#d4af37,transparent);
+background-size:200% 100%;
+animation:goldLine 3s linear infinite;
+}
+
+@keyframes goldLine{
+0%{background-position:-200% 0;}
+100%{background-position:200% 0;}
+}
+/* ===== ROYAL ANIMATED BORDER SHINE ===== */
+
+.card {
+position: relative;
+perspective: 1000px;
+cursor: pointer;
+}
+
+.card::before {
+content: "";
+position: absolute;
+top: -2px;
+left: -2px;
+right: -2px;
+bottom: -2px;
+border-radius: 14px;
+background: linear-gradient(
+120deg,
+transparent,
+rgba(212,175,55,0.6),
+transparent
+);
+background-size: 200% 200%;
+z-index: 0;
+opacity: 0;
+transition: opacity 0.4s ease;
+}
+
+.card:hover::before {
+opacity: 1;
+animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+0% { background-position: -200% 0; }
+100% { background-position: 200% 0; }
+}
+
+/* Premium Glow Hover */
+.card {
+position: relative;
+perspective: 1200px;
+cursor: pointer;
+opacity: 0;
+transform: translateY(40px);
+transition: all 0.8s ease;
+}
+/* ===== ULTRA ROYAL GLASS CARDS ===== */
+
+.card {
+position: relative;
+perspective: 1200px;
+cursor: pointer;
+opacity: 0;
+transform: translateY(40px);
+transition: all 0.8s ease;
+}
+
+.card.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+.card-inner {
+position: relative;
+width: 100%;
+height: 270px;
+transition: transform 0.9s cubic-bezier(.4,.2,.2,1);
+transform-style: preserve-3d;
+border-radius: 16px;
+}
+
+.card.flip .card-inner {
+transform: rotateY(180deg);
+}
+
+/* GLASS EFFECT */
+.card-front, .card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+border-radius: 16px;
+padding: 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+/* GLASS */
+background: rgba(255,255,255,0.65);
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+border: 1px solid rgba(212,175,55,0.3);
+
+box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+transition: all 0.5s ease;
+}
+
+.card-back {
+transform: rotateY(180deg);
+background: linear-gradient(135deg,#b9973e,#d4af37);
+color: white;
+}
+
+/* GOLD BORDER SHINE */
+.card::before {
+content: "";
+position: absolute;
+inset: -2px;
+border-radius: 18px;
+background: linear-gradient(120deg,transparent,rgba(212,175,55,0.7),transparent);
+background-size: 200% 200%;
+opacity: 0;
+transition: opacity 0.4s ease;
+z-index: -1;
+}
+
+.card:hover::before {
+opacity: 1;
+animation: shine 2.5s linear infinite;
+}
+
+@keyframes shine {
+0% { background-position: -200% 0; }
+100% { background-position: 200% 0; }
+}
+
+.card:hover .card-inner {
+transform: translateY(-8px);
+box-shadow: 0 20px 60px rgba(185,151,62,0.25);
+}
+.card-front, .card-back {
+position: relative;
+z-index: 1;
+}
+
+/* Elegant Soft Shadow */
+.card-inner {
+box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+border-radius: 12px;
+transition: transform 0.6s ease, box-shadow 0.4s ease;
+}
+
+.card:hover .card-inner {
+box-shadow: 0 15px 40px rgba(185,151,62,0.25);
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f6f1;
+color:#222;
+overflow-x:hidden;
+}
+
+/* ===== ROYAL BACKGROUND ILLUSION ===== */
+
+body::before{
+content:"";
+position:fixed;
+top:-200px;
+right:-200px;
+width:500px;
+height:500px;
+background:radial-gradient(circle,rgba(212,175,55,0.25),transparent 70%);
+z-index:-1;
+animation:float1 8s ease-in-out infinite alternate;
+}
+
+body::after{
+content:"";
+position:fixed;
+bottom:-200px;
+left:-200px;
+width:400px;
+height:400px;
+background:radial-gradient(circle,rgba(185,151,62,0.25),transparent 70%);
+z-index:-1;
+animation:float2 10s ease-in-out infinite alternate;
+}
+
+@keyframes float1{
+from{transform:translateY(0);}
+to{transform:translateY(40px);}
+}
+
+@keyframes float2{
+from{transform:translateY(0);}
+to{transform:translateY(-40px);}
+}
+
+/* ===== CURTAIN ===== */
+
+.curtain-wrapper{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:flex;
+z-index:9999;
+}
+
+.curtain{
+width:50%;
+height:100%;
+position:relative;
+background:
+linear-gradient(135deg,#3b0a0a,#7b1113,#2b0000);
+transition:transform 1.8s cubic-bezier(.77,0,.18,1);
+box-shadow:inset 0 0 120px rgba(0,0,0,0.8);
+overflow:hidden;
+}
+
+/* Fabric texture waves */
+.curtain::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:200%;
+height:100%;
+background:repeating-linear-gradient(
+90deg,
+rgba(255,255,255,0.05) 0px,
+rgba(255,255,255,0.05) 2px,
+transparent 2px,
+transparent 6px
+);
+animation:curtainWave 6s linear infinite;
+opacity:0.4;
+}
+
+@keyframes curtainWave{
+0%{transform:translateX(0);}
+100%{transform:translateX(-200px);}
+}
+
+.curtain-wrapper.open .left{
+transform:translateX(-100%);
+}
+
+.curtain-wrapper.open .right{
+transform:translateX(100%);
+}
+
+.curtain-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-family:'Playfair Display',serif;
+font-size:28px;
+color:white;
+letter-spacing:2px;
+text-align:center;
+}
+
+/* ===== HEADER ===== */
+
+header{
+padding:25px 0;
+text-align:center;
+background:white;
+border-bottom:1px solid #ddd;
+}
+
+header h1{
+font-size:18px;
+color:#b9973e;
+}
+
+header p{
+font-size:12px;
+color:#777;
+margin-top:5px;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+overflow:hidden;
+background:radial-gradient(circle at 50% 30%, rgba(212,175,55,0.15), transparent 60%);
+background-size:120%;
+animation:heroZoom 20s ease-in-out infinite alternate;
+}
+
+/* ===== HERO FULL SCREEN ILLUSION ===== */
+
+.hero{
+position:relative;
+overflow:hidden;
+background:radial-gradient(circle at 50% 30%, rgba(212,175,55,0.15), transparent 60%);
+}
+@keyframes heroZoom{
+from{background-size:120%;}
+to{background-size:135%;}
+}
+/* Animated light rays */
+.hero::before{
+content:"";
+position:absolute;
+top:-50%;
+left:-50%;
+width:200%;
+height:200%;
+background:conic-gradient(
+from 0deg,
+rgba(212,175,55,0.08),
+transparent,
+rgba(212,175,55,0.08)
+);
+animation:rotateLight 18s linear infinite;
+z-index:-1;
+}
+
+/* Floating glow orb */
+.hero::after{
+content:"";
+position:absolute;
+bottom:10%;
+right:15%;
+width:300px;
+height:300px;
+background:radial-gradient(circle, rgba(185,151,62,0.25), transparent 70%);
+filter:blur(40px);
+animation:floatOrb 6s ease-in-out infinite alternate;
+z-index:-1;
+}
+
+@keyframes rotateLight{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+@keyframes floatOrb{
+from{transform:translateY(0);}
+to{transform:translateY(-40px);}
+}
+.hero h2{
+font-family:'Playfair Display',serif;
+font-size:72px;
+color:#b9973e;
+letter-spacing:3px;
+text-transform:uppercase;
+background:linear-gradient(90deg,#b9973e,#d4af37,#b9973e);
+background-size:200% auto;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:goldFlow 5s linear infinite, royalGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes goldFlow{
+0%{background-position:0% center;}
+100%{background-position:200% center;}
+}
+
+.hero h3{
+margin-top:15px;
+font-size:15px;
+color:#666;
+letter-spacing:2px;
+}
+.hero h3{
+animation:fadeUp 1.5s ease forwards;
+animation-delay:0.5s;
+opacity:0;
+}
+
+.hero .quote{
+animation:fadeUp 1.5s ease forwards;
+animation-delay:1s;
+opacity:0;
+}
+
+.hero .quote{
+margin-top:25px;
+font-style:italic;
+color:#444;
+max-width:600px;
+}
+
+
+@keyframes royalGlow {
+from { text-shadow: 0 0 10px rgba(212,175,55,0.4); }
+to { text-shadow: 0 0 25px rgba(212,175,55,0.8); }
+}
+/* ===== SECTION ===== */
+.section h2 {
+position: relative;
+display: inline-block;
+padding-bottom: 15px;
+animation: fadeUp 1.2s ease forwards;
+}
+
+.section h2::after {
+content: "";
+position: absolute;
+left: 50%;
+bottom: 0;
+transform: translateX(-50%);
+width: 0;
+height: 3px;
+background: linear-gradient(90deg,#b9973e,#d4af37);
+transition: width 0.8s ease;
+}
+
+.section.show h2::after {
+width: 80%;
+}
+
+@keyframes fadeUp {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+.section{
+padding:80px 10%;
+text-align:center;
+opacity:0;
+transform:translateY(40px);
+transition:all 1s ease;
+}
+
+.section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+color:#b9973e;
+margin-bottom:30px;
+}
+
+/* ===== ACTIVITIES ===== */
+
+.activities{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.activity{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+cursor:pointer;
+transition:0.4s;
+}
+
+.activity:hover{
+transform:translateY(-8px);
+}
+
+.activity-content{
+display:none;
+margin-top:15px;
+font-size:14px;
+color:#444;
+}
+.vision-mission .activity-content{
+color:white;
+}
+
+.activity.active .activity-content{
+display:block;
+}
+
+/* ===== COORDINATOR CARDS ===== */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+perspective:1000px;
+cursor:pointer;
+}
+
+.card-inner{
+position:relative;
+width:100%;
+height:260px;
+transition:transform 0.8s;
+transform-style:preserve-3d;
+}
+
+.card.flip .card-inner{
+transform:rotateY(180deg);
+}
+
+.card-front,.card-back{
+position:absolute;
+width:100%;
+height:100%;
+backface-visibility:hidden;
+background:white;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:20px;
+text-align:center;
+}
+
+.card-back{
+transform:rotateY(180deg);
+background:#b9973e;
+color:white;
+}
+
+.image-placeholder{
+width:90px;
+height:90px;
+background:#ddd;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+background:#111;
+color:#eee;
+padding:60px 10%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+footer h3{
+color:#d4af37;
+margin-bottom:15px;
+font-family:'Playfair Display',serif;
+}
+
+footer a{
+display:block;
+color:#bbb;
+margin-bottom:8px;
+text-decoration:none;
+transition:0.3s;
+}
+
+footer a:hover{
+color:white;
+}
+.social-btn{
+display:inline-block;
+padding:10px 20px;
+margin-right:10px;
+border-radius:30px;
+background:#b9973e;
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.social-btn:hover{
+background:white;
+color:#111;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+.hero h2{font-size:40px;}
+.section{padding:60px 5%;}
+}
+#particles {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -2;
+}
+</style>
+</head>
+<body>
+<header class="main-header">
+
+  <!-- Left: College Logo -->
+  <div class="header-left">
+    <img src="jbrec.png" alt="JBREC Logo" class="college-logo">
+  </div>
+
+  <!-- Center: College Name -->
+  <div class="header-center">
+    <h1>JOGINPALLY B.R. ENGINEERING COLLEGE</h1>
+    <p>(UGC AUTONOMOUS)</p>
+
+    <p class="approval-text">
+        Approved by AICTE & Affiliated to JNTUH
+    </p>
+
+    <p class="address-text">
+        Survey No. 156 To 162, Yenkapally village, Near Chilkur Balaji Temple,
+        Moinabad Mandal, Hyderabad, Telangana 500075
+    </p>
+
+    <p class="accreditation-text">
+        NBA Accredited | NAAC A+ | ISO 9001:2015 Certified
+    </p>
+</div>
+
+  
+ <!-- Right: Accreditation & Association Logos -->
+<div class="header-right">
+    <img src="naac.jpeg" alt="NAAC Logo">
+    <img src="aicte.jpg" alt="AICTE Logo">
+    <img src="jntuh.png" alt="JNTUH Logo">
+    <img src="itlogo.png" alt="INTAGLIO Logo">
+    <img src="csi.jpg" alt="CSI Logo">
+</div>
+
+</header>
+<canvas id="particles"></canvas>
+<!-- CURTAIN -->
+<div class="curtain-wrapper" id="curtainWrapper">
+<div class="curtain left"></div>
+<div class="curtain right"></div>
+<div class="curtain-text">
+Press Any Key To Inaugurate
+</div>
+</div>
+
+
+
+<!-- HERO -->
+<!-- HERO -->
+<section class="hero">
+
+<img src="itlogo.png" alt="IT Intelligence Club Logo" class="club-logo">
+
+<h2>IT Intelligence Club</h2>
+<h3>In Association with INTAGLIO – A Technical Student Association</h3>
+<p class="quote">“Empowering Innovation. Inspiring Technology. Building Future Leaders.”</p>
+
+</section>
+
+<!-- VISION & MISSION -->
+<section class="section vision-mission">
+<h2>Vision & Mission</h2>
+
+<div class="activities">
+
+<div class="activity">
+<h4>Vision</h4>
+<div class="activity-content">
+To establish IT Intelligence Club as a center of technical excellence fostering innovation and leadership.<br><br>
+To nurture ethically responsible technologists prepared for global challenges.
+</div>
+</div>
+
+<div class="activity">
+<h4>Mission</h4>
+<div class="activity-content">
+• Conduct structured workshops and hands-on technical training programs.<br><br>
+• Encourage competitive coding and innovation-driven hackathons.<br><br>
+• Bridge academia and industry through expert talks and industrial visits.<br><br>
+• Promote collaborative learning and research initiatives.
+</div>
+</div>
+
+</div>
+</section>
+<!-- WHAT WE DO -->
+<section class="section">
+<h2>What We Do</h2>
+<div class="activities">
+
+<div class="activity"><h4>Workshops</h4><div class="activity-content">Hands-on AI, Web, Cybersecurity workshops.</div></div>
+<div class="activity"><h4>Guest Lectures</h4><div class="activity-content">Industry leaders share real insights.</div></div>
+<div class="activity"><h4>Hackathons</h4><div class="activity-content">Innovation-driven coding competitions.</div></div>
+<div class="activity"><h4>Coding Contests</h4><div class="activity-content">Competitive programming battles.</div></div>
+<div class="activity"><h4>Industrial Visits</h4><div class="activity-content">Practical exposure to tech industries.</div></div>
+<div class="activity"><h4>Webinars</h4><div class="activity-content">Online sessions on trending technologies.</div></div>
+
+</div>
+</section>
+
+<!-- FACULTY -->
+<section class="section">
+<h2>Faculty Coordinators</h2>
+<div class="grid">
+
+<div class="card"><div class="card-inner">
+<div class="card-front"><div class="profile-img">
+   <img src="ptr.jpeg" alt="Mr. P. Thimma Reddy">
+</div><h4>Mr. P Thimma Reddy</h4><p>Faculty Coordinator</p></div>
+<div class="card-back"><p>Email:ptr.jbrec@gmail.com</p></div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+<div class="card-front"><div class="profile-img">
+   <img src="chandrika.jpg" alt="Mrs. K Chandrika">
+</div><h4>Mrs. K Chandrika</h4><p>Auditor</p></div>
+<div class="card-back"><p>Email:kchandrikait@jbrec.edu.in</p></div>
+</div></div>
+
+</section>
+
+
+
+
+<!-- STUDENT COORDINATORS -->
+<section class="section">
+<h2>Student Coordinators Hierarchy</h2>
+<div class="grid">
+
+										<!-- President -->
+<div class="card">
+  <div class="card-inner">
+
+    <div class="card-front">
+        <div class="image-placeholder"></div>
+        <h4>Amireddy Varun Reddy</h4> 
+        <p class="year">III Year</p>
+        <p class="role">President</p>
+    </div>
+
+    <div class="card-back">
+        <div class="social-links">
+            <a href="mailto:studentmail@example.com" class="icon mail">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/studentprofile" class="icon linkedin" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+									<!-- Vice Presidents -->
+<div class="card">
+  <div class="card-inner">
+
+    <div class="card-front">
+       <div class="profile-img">
+    <img src="sathwika.jpeg" alt="Dommata Sathwika">
+</div>
+        <h4>Dommata Sathwika</h4>
+        <p class="year">III Year</p>
+        <p>Vice President</p>
+    </div>
+
+    <div class="card-back">
+    <div class="social-links">
+        <a href="mailto:sathwikareddie25@gmail.com" class="icon mail">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/Sathwika-Dommata" class="icon linkedin" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+</div>
+
+  </div>
+</div>
+
+										<!-- Vice President 2 -->
+
+<div class="card">
+<div class="card-inner">
+
+<div class="card-front">
+<div class="profile-img">
+<img src="shilpa.jpeg" alt="Bondala Shilpa">
+</div>
+<h4>Bondala Shilpa</h4>
+<p class="year">II Year</p>
+<p>Vice President</p>
+</div>
+
+<div class="card-back">
+<div class="social-links">
+<a href="mailto:shilpabondala2006@gmail.com" class="icon mail">
+<i class="fas fa-envelope"></i>
+</a>
+<a href="https://www.linkedin.com/in/shilpa-bondala-a67bb132b" target="_blank" class="icon linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+										<!-- General Secretary -->
+<div class="card">
+<div class="card-inner">
+
+<div class="card-front">
+<div class="profile-img">
+<img src="lion.jpeg" alt="S Md Huzaifa">
+</div>
+<h4>S Md Huzaifa</h4>
+<p class="year">III Year</p>
+<p>General Secretary</p>
+</div>
+
+<div class="card-back">
+<div class="social-links">
+<a href="mailto:mohammedhuzaifa2809@gmail.com" class="icon mail">
+<i class="fas fa-envelope"></i>
+</a>
+<a href="https://www.linkedin.com/in/mohammedhuzaifa28" target="_blank" class="icon linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+										<!-- Joint Secretary -->
+<div class="card">
+<div class="card-inner">
+
+<div class="card-front">
+<div class="profile-img">
+<img src="arfath.jpeg" alt="Md Arfath">
+</div>
+<h4>Md Arfath</h4>
+<p class="year">II Year</p>
+<p>Joint Secretary</p>
+</div>
+
+<div class="card-back">
+<div class="social-links">
+<a href="mailto:arfathm109@gmail.com " class="icon mail">
+<i class="fas fa-envelope"></i>
+</a>
+<a href="https://www.linkedin.com/in/md-arfath-74734b337" target="_blank" class="icon linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+										<!--- Treasurer -->
+
+
+
+<div class="card">
+<div class="card-inner">
+
+<div class="card-front">
+<div class="profile-img">
+<img src="image.jpg" alt="Mahathi Madur">
+</div>
+<h4>mahathi Madur</h4>
+<p class="year">III Year</p>
+<p>Treasurer</p>
+</div>
+
+<div class="card-back">
+<div class="social-links">
+<a href="mailto:email@example.com" class="icon mail">
+<i class="fas fa-envelope"></i>
+</a>
+<a href="https://linkedin.com/in/profile" target="_blank" class="icon linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+								
+
+										<!--- Treasurer 2-->
+<div class="card">
+<div class="card-inner">
+
+<div class="card-front">
+<div class="profile-img">
+<img src="aishwarya.jpeg" alt="Kotte Aishwarya">
+</div>
+<h4>Kotte Aishwarya</h4>
+<p class="year">II Year</p>
+<p>Treasurer</p>
+</div>
+
+<div class="card-back">
+<div class="social-links">
+<a href="mailto:email@example.com" class="icon mail">
+<i class="fas fa-envelope"></i>
+</a>
+<a href="https://linkedin.com/in/profile" target="_blank" class="icon linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+									<!-- Technical Head 1 -->
+<div class="card">
+<div class="card-inner">
+
+<div class="card-front">
+<div class="profile-img">
+<img src="sohan.jpeg" alt="Tandekar Saharsh">
+</div>
+<h4>Tandekar Saharsh</h4>
+<p class="year">III Year</p>
+<p>Technical Head</p>
+</div>
+
+<div class="card-back">
+<div class="social-links">
+<a href="mailto:tandekarsaharsh29@gmail.com" class="icon mail">
+<i class="fas fa-envelope"></i>
+</a>
+<a href="https://linkedin.com/in/saharsh-tandekar" target="_blank" class="icon linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+
+									<!-- Technical Head 1 -->
+<div class="card">
+<div class="card-inner">
+
+<div class="card-front">
+<div class="profile-img">
+<img src="santosh.jpeg" alt="Ramini Sai Santhosh">
+</div>
+<h4>Ramini Sai Santhosh</h4>
+<p class="year">II Year</p>
+<p>Joint Technical Head</p>
+</div>
+
+<div class="card-back">
+<div class="social-links">
+<a href="mailto:raminisaisanthosh@gmail.com" class="icon mail">
+<i class="fas fa-envelope"></i>
+</a>
+<a href="https://www.linkedin.com/in/raminisaisanthosh" target="_blank" class="icon linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+									<!-- Web Developer Head  -->
+<div class="card">
+<div class="card-inner">
+
+<div class="card-front">
+<div class="profile-img">
+<img src="suryam.jpeg" alt="Amaram Suryam">
+</div>
+<h4>Amaram Suryam</h4>
+<p class="year">III Year</p>
+<p>Web Developer Head</p>
+</div>
+
+<div class="card-back">
+<div class="social-links">
+<a href="mailto:amaramsuryam@gmail.com" class="icon mail">
+<i class="fas fa-envelope"></i>
+</a>
+<a href="https://www.linkedin.com/in/amaram-suryam-930470313" target="_blank" class="icon linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+
+										<!-- Events -->
+<div class="card">
+<div class="card-inner">
+
+<div class="card-front">
+<div class="profile-img">
+<img src="kella.jpeg" alt="Kella Surya">
+</div>
+<h4>Kella Surya</h4>
+<p class="year">III Year</p>
+<p>Events Head</p>
+</div>
+
+<div class="card-back">
+<div class="social-links">
+<a href="mailto:kella.surya2004july@gmail.com" class="icon mail">
+<i class="fas fa-envelope"></i>
+</a>
+<a href="https://www.linkedin.com/in/kella-surya-213a51376?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="icon linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+									<!-- PR & Media -->
+<div class="card">
+<div class="card-inner">
+
+<div class="card-front">
+<div class="profile-img">
+<img src="sam.jpeg" alt="P Sampath Reddy">
+</div>
+<h4>P Sampath Reddy</h4>
+<p class="year">III Year</p>
+<p>PR & Media Head</p>
+</div>
+
+<div class="card-back">
+<div class="social-links">
+<a href="mailto:email@example.com" class="icon mail">
+<i class="fas fa-envelope"></i>
+</a>
+<a href="https://linkedin.com/in/profile" target="_blank" class="icon linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+									<!-- Joint PR & Media -->
+<div class="card">
+<div class="card-inner">
+
+<div class="card-front">
+<div class="profile-img">
+<img src="chandu.jpeg" alt="Kummari Chandra Shekar">
+</div>
+<h4>Kummari Chandra Shekar</h4>
+<p class="year">II Year</p>
+<p>Joint Media Head</p>
+</div>
+
+<div class="card-back">
+<div class="social-links">
+<a href="mailto:kummarichandrashekar861@gmail.com " class="icon mail">
+<i class="fas fa-envelope"></i>
+</a>
+<a href="https://www.linkedin.com/in/kummari-chandra-shekar-51a761385" target="_blank" class="icon linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+
+										<!-- Outreach -->
+
+<div class="card">
+<div class="card-inner">
+
+<div class="card-front">
+<div class="profile-img">
+<img src="jaya.jpeg" alt="P Jaya Prakash">
+</div>
+<h4>P Jaya Prakash</h4>
+<p class="year">III Year</p>
+<p>Outreach Head</p>
+</div>
+
+<div class="card-back">
+<div class="social-links">
+<a href="mailto:jaipadala284@gmail.com" class="icon mail">
+<i class="fas fa-envelope"></i>
+</a>
+<a href="https://linkedin.com/in/profile" target="_blank" class="icon linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+<div class="footer-grid">
+
+<div>
+<h3>IT Intelligence Club</h3>
+<p>“Exploring Innovation. Empowering Intelligence.”</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Activities</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</div>
+
+<div>
+<h3>Contact Us</h3>
+<p>Official Mail: ______</p>
+<a href="#" class="social-btn">Instagram</a>
+<a href="#" class="social-btn">WhatsApp Channel</a>
+</div>
+
+</div>
+</footer>
+
+<script>
+
+let opened=false;
+document.addEventListener("keydown",function(){
+if(!opened){
+document.getElementById("curtainWrapper").classList.add("open");
+opened=true;
+setTimeout(()=>{document.getElementById("curtainWrapper").style.display="none";},2000);
+}
+});
+
+document.querySelectorAll(".activity").forEach(item=>{
+item.addEventListener("click",()=>item.classList.toggle("active"));
+});
+
+document.querySelectorAll(".card").forEach(card=>{
+card.addEventListener("click",()=>card.classList.toggle("flip"));
+});
+/* STAGGER CARD ANIMATION */
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+cards.forEach((card, index) => {
+if (card.getBoundingClientRect().top < window.innerHeight - 100) {
+setTimeout(() => {
+card.classList.add("show");
+}, index * 100);
+}
+});
+});
+const sections=document.querySelectorAll(".section");
+window.addEventListener("scroll",()=>{
+sections.forEach(sec=>{
+if(sec.getBoundingClientRect().top<window.innerHeight-100){
+sec.classList.add("show");
+}
+});
+});
+/* ===== GOLD PARTICLES ===== */
+const canvas = document.getElementById("particles");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particlesArray = [];
+
+class Particle {
+constructor() {
+this.x = Math.random() * canvas.width;
+this.y = Math.random() * canvas.height;
+this.size = Math.random() * 2;
+this.speedY = Math.random() * 0.5 + 0.2;
+}
+
+update() {
+this.y -= this.speedY;
+if (this.y < 0) this.y = canvas.height;
+}
+
+draw() {
+ctx.fillStyle = "rgba(212,175,55,0.6)";
+ctx.beginPath();
+ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+ctx.fill();
+}
+}
+
+function initParticles() {
+for (let i = 0; i < 120; i++) {
+particlesArray.push(new Particle());
+}
+}
+
+function animateParticles() {
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+particlesArray.forEach(p => {
+p.update();
+p.draw();
+});
+requestAnimationFrame(animateParticles);
+}
+
+initParticles();
+animateParticles();
+</script>
+
+</body>
+</html>
